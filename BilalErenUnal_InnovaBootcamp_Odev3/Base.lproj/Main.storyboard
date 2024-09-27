@@ -1,24 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7QB-nt-4Si">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BilalErenUnal_InnovaBootcamp_Odev3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVS-Lo-Ayl">
+                                <rect key="frame" x="0.0" y="103" width="393" height="956"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m0G-QR-Xc1">
+                                        <rect key="frame" x="16" y="54" width="361" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="1fY-DN-qdF"/>
+                                        </connections>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdT-CT-XPu">
+                                        <rect key="frame" x="302" y="10" width="75" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ed-hG-OUw">
+                                        <rect key="frame" x="16" y="10" width="75" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ua-ez-aPZ">
+                                        <rect key="frame" x="0.0" y="226" width="393" height="150"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44K-ne-fAg">
+                                                <rect key="frame" x="0.0" y="0.0" width="622" height="90"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vHT-sw-ayX">
+                                                        <rect key="frame" x="8" y="36" width="480" height="60"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sWy-kr-R5p">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxP-Y4-WAh">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="60" id="GXS-W9-rt4"/>
+                                                                            <constraint firstAttribute="width" constant="60" id="Qk4-gA-JOm"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="filled" image="burger60" imagePadding="0.0"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="30"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DtK-Sa-p2G">
+                                                                <rect key="frame" x="70" y="0.0" width="60" height="60"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oua-0C-s6z">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="60" id="1Ba-15-IWM"/>
+                                                                            <constraint firstAttribute="width" constant="60" id="qcx-wm-14Y"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="filled" image="chicken (1)" imagePadding="0.0"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="30"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tavuk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAV-bk-pAW">
+                                                                        <rect key="frame" x="0.0" y="60" width="60" height="0.0"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFG-QV-hEB">
+                                                                <rect key="frame" x="140" y="0.0" width="60" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="60" id="2Zu-U3-AGE"/>
+                                                                    <constraint firstAttribute="height" constant="60" id="f3r-uH-kAc"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" image="pancake (1)" imagePadding="0.0"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="30"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8h-hE-76Q">
+                                                                <rect key="frame" x="210" y="0.0" width="60" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="60" id="GJb-wU-R4b"/>
+                                                                    <constraint firstAttribute="height" constant="60" id="gQe-iP-Qxx"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" image="pizza (1)" imagePadding="0.0"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="30"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Atx-qe-hgb">
+                                                                <rect key="frame" x="280" y="0.0" width="60" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="60" id="aUh-dQ-C67"/>
+                                                                    <constraint firstAttribute="height" constant="60" id="zo8-J7-3hU"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" image="steak (1)" imagePadding="0.0"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="30"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYi-E8-yq6">
+                                                                <rect key="frame" x="350" y="0.0" width="60" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="60" id="2mP-xa-pcR"/>
+                                                                    <constraint firstAttribute="height" constant="60" id="ioj-Ox-rRB"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" image="drink (1)" imagePadding="0.0"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="30"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8Q-W3-Qni">
+                                                                <rect key="frame" x="420" y="0.0" width="60" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="I7a-uD-tYc"/>
+                                                                    <constraint firstAttribute="width" constant="60" id="qor-mX-EVs"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" image="vegetables (1)" imagePadding="0.0"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="30"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="AXk-3P-0W6"/>
+                                                    <constraint firstAttribute="width" constant="622" id="Nas-U2-3Kc"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="44K-ne-fAg" secondAttribute="bottom" id="1uQ-fX-0UI"/>
+                                            <constraint firstItem="44K-ne-fAg" firstAttribute="height" secondItem="a6J-6A-tE6" secondAttribute="height" id="BJ9-D7-zgm"/>
+                                            <constraint firstAttribute="trailing" secondItem="44K-ne-fAg" secondAttribute="trailing" id="CW6-wc-mB9"/>
+                                            <constraint firstItem="44K-ne-fAg" firstAttribute="top" secondItem="4ua-ez-aPZ" secondAttribute="top" id="IPE-zY-iTG"/>
+                                            <constraint firstAttribute="height" constant="150" id="JlD-3b-QGL"/>
+                                            <constraint firstItem="44K-ne-fAg" firstAttribute="leading" secondItem="4ua-ez-aPZ" secondAttribute="leading" id="OSw-QL-3ma"/>
+                                            <constraint firstAttribute="trailing" secondItem="44K-ne-fAg" secondAttribute="trailing" constant="229" id="XkP-On-0fp"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="a6J-6A-tE6"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="62o-Ms-5jZ"/>
+                                    </scrollView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pexels-janetrangdoan-1099680" translatesAutoresizingMaskIntoConstraints="NO" id="sLt-QS-ok7">
+                                        <rect key="frame" x="12" y="122" width="369" height="178"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="sLt-QS-ok7" firstAttribute="leading" secondItem="kVS-Lo-Ayl" secondAttribute="leading" constant="12" id="9l5-DZ-Zea"/>
+                                    <constraint firstItem="sLt-QS-ok7" firstAttribute="top" secondItem="m0G-QR-Xc1" secondAttribute="bottom" constant="10" id="BdA-hh-gsh"/>
+                                    <constraint firstItem="9Ed-hG-OUw" firstAttribute="top" secondItem="kVS-Lo-Ayl" secondAttribute="top" constant="10" id="Lja-XS-tYU"/>
+                                    <constraint firstAttribute="bottom" secondItem="4ua-ez-aPZ" secondAttribute="bottom" constant="580" id="OF9-af-FPN"/>
+                                    <constraint firstItem="WdT-CT-XPu" firstAttribute="top" secondItem="kVS-Lo-Ayl" secondAttribute="top" constant="10" id="QRo-F7-iqC"/>
+                                    <constraint firstItem="4ua-ez-aPZ" firstAttribute="top" secondItem="sLt-QS-ok7" secondAttribute="bottom" constant="21" id="QxU-1i-kIG"/>
+                                    <constraint firstItem="9Ed-hG-OUw" firstAttribute="leading" secondItem="kVS-Lo-Ayl" secondAttribute="leading" constant="16" id="SZu-dQ-NNR"/>
+                                    <constraint firstItem="4ua-ez-aPZ" firstAttribute="leading" secondItem="kVS-Lo-Ayl" secondAttribute="leading" id="cPO-mJ-gO6"/>
+                                    <constraint firstAttribute="trailing" secondItem="sLt-QS-ok7" secondAttribute="trailing" constant="12" id="e2L-B8-HOY"/>
+                                    <constraint firstItem="m0G-QR-Xc1" firstAttribute="leading" secondItem="kVS-Lo-Ayl" secondAttribute="leading" constant="16" id="eEb-HJ-odQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="WdT-CT-XPu" secondAttribute="trailing" constant="16" id="kRe-0d-Zr4"/>
+                                    <constraint firstItem="m0G-QR-Xc1" firstAttribute="centerX" secondItem="kVS-Lo-Ayl" secondAttribute="centerX" id="nZo-Vp-lwr"/>
+                                    <constraint firstAttribute="trailing" secondItem="4ua-ez-aPZ" secondAttribute="trailing" id="npT-YH-88e"/>
+                                    <constraint firstItem="m0G-QR-Xc1" firstAttribute="top" secondItem="WdT-CT-XPu" secondAttribute="bottom" constant="10" id="uUK-4h-hRr"/>
+                                    <constraint firstItem="sLt-QS-ok7" firstAttribute="centerX" secondItem="kVS-Lo-Ayl" secondAttribute="centerX" id="ub7-2s-bi7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="kVS-Lo-Ayl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CiE-4E-Q5r"/>
+                            <constraint firstItem="kVS-Lo-Ayl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WYz-Uy-VIi"/>
+                            <constraint firstAttribute="bottom" secondItem="kVS-Lo-Ayl" secondAttribute="bottom" constant="-207" id="pcW-7m-Wnm"/>
+                            <constraint firstItem="kVS-Lo-Ayl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yDs-K5-jpN"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8Kp-JB-8bN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1918.3206106870227" y="-27.464788732394368"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bCq-hh-t9V">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7QB-nt-4Si" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TAC-Tz-JN0">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RVi-o9-LPV" kind="relationship" relationship="viewControllers" id="xoH-WI-obN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLw-bh-u6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="-27.464788732394368"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="azz-2N-AiX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RVi-o9-LPV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="zlj-Dm-BKW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bRa-3Y-bOX">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OmX-iC-imt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMc-oX-g7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991.60305343511448" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="burger60" width="60" height="60"/>
+        <image name="chicken (1)" width="60" height="90"/>
+        <image name="drink (1)" width="60" height="60"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="pancake (1)" width="60" height="60"/>
+        <image name="pexels-janetrangdoan-1099680" width="2304" height="1536"/>
+        <image name="pizza (1)" width="60" height="107"/>
+        <image name="steak (1)" width="60" height="90"/>
+        <image name="vegetables (1)" width="60" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
